@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio of Arockia Joshva — Web Developer, UI/UX Designer, and Computer Science student at Dhanalakshmi Srinivasan Engineering College." />
+  <title>Arockia Joshva | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-ring"></div>
+  </div>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow"></div>
+
+  <!-- Particles -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">AJ.</a>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <!-- <li><a href="#certificates">Certificates</a></li> -->
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Arockia <span class="gradient-text">Joshva</span></h1>
+      <p class="hero-role">I'm a <span class="typed-text"></span><span class="cursor-blink">|</span></p>
+      <p class="hero-desc">
+        A passionate developer &amp; designer currently pursuing my degree at
+        <strong>Dhanalakshmi Srinivasan Engineering College</strong>. I craft
+        elegant digital experiences with clean code and creative design.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary"><i class="fa-solid fa-rocket"></i> View My Work</a>
+        <a href="#contact" class="btn-outline"><i class="fa-solid fa-envelope"></i> Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num" data-count="10"></div>
+          <div class="hero-stat-label">Projects</div>
+        </div>
+        <div>
+          <div class="hero-stat-num" data-count="8"></div>
+          <div class="hero-stat-label">Certificates</div>
+        </div>
+        <div>
+          <div class="hero-stat-num" data-count="6"></div>
+          <div class="hero-stat-label">Skills</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-image-wrapper">
+        <div class="hero-image-ring"></div>
+        <div class="hero-image-dots"></div>
+        <div class="hero-image-dots"></div>
+        <div class="hero-image-dots"></div>
+        <div class="hero-image-dots"></div>
+        <img src="profile.png" alt="Arockia Joshva" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-header reveal">
+      <p class="section-tag">Get To Know Me</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-content">
+      <div class="about-image-side reveal">
+        <div class="about-img-card">
+          <img src="profile.png" alt="Arockia Joshva" />
+          <div class="about-badge"><span class="dot"></span> Available for opportunities</div>
+        </div>
+      </div>
+      <div class="about-text-side reveal">
+        <p>
+          I'm <strong>Arockia Joshva</strong>, a passionate Computer Science student at
+          <strong>Dhanalakshmi Srinivasan Engineering College</strong>. I love building
+          beautiful, responsive, and functional web applications that deliver outstanding user experiences.
+        </p>
+        <p>
+          With a strong foundation in frontend and backend technologies, I enjoy turning
+          complex problems into simple, elegant solutions. My goal is to create impactful
+          digital products that make a difference.
+        </p>
+        <div class="about-info-grid">
+          <div class="about-info-item">
+            <div class="about-info-label">Name</div>
+            <div class="about-info-value">Arockia Joshva</div>
+          </div>
+          <div class="about-info-item">
+            <div class="about-info-label">College</div>
+            <div class="about-info-value">DSEC</div>
+          </div>
+          <div class="about-info-item">
+            <div class="about-info-label">Degree</div>
+            <div class="about-info-value"> B.Tech Information Technology</div>
+          </div>
+          <div class="about-info-item">
+            <div class="about-info-label">Location</div>
+            <div class="about-info-value">Ariyalur,Tamil Nadu</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <p class="section-tag">What I Know</p>
+      <h2 class="section-title">Skills &amp; Technologies</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <!-- HTML -->
+      <div class="skill-card reveal">
+        <div class="skill-header">
+          <div class="skill-name">
+            <div class="skill-icon" style="background:rgba(227,76,38,0.15);color:#e34c26;"><i
+                class="fa-brands fa-html5"></i></div>
+            HTML5
+          </div>
+          <span class="skill-percent">90%</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" data-width="90%" style="background:linear-gradient(90deg,#e34c26,#f06529);"></div>
+        </div>
+      </div>
+      <!-- CSS -->
+      <div class="skill-card reveal">
+        <div class="skill-header">
+          <div class="skill-name">
+            <div class="skill-icon" style="background:rgba(38,77,228,0.15);color:#264de4;"><i
+                class="fa-brands fa-css3-alt"></i></div>
+            CSS3
+          </div>
+          <span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" data-width="85%" style="background:linear-gradient(90deg,#264de4,#2965f1);"></div>
+        </div>
+      </div>
+      <!-- JavaScript -->
+      <div class="skill-card reveal">
+        <div class="skill-header">
+          <div class="skill-name">
+            <div class="skill-icon" style="background:rgba(247,223,30,0.15);color:#f7df1e;"><i
+                class="fa-brands fa-js"></i></div>
+            JavaScript
+          </div>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" data-width="80%" style="background:linear-gradient(90deg,#f7df1e,#f0c808);"></div>
+        </div>
+      </div>
+      <!-- Python -->
+      <div class="skill-card reveal">
+        <div class="skill-header">
+          <div class="skill-name">
+            <div class="skill-icon" style="background:rgba(55,118,171,0.15);color:#3776ab;"><i
+                class="fa-brands fa-python"></i></div>
+            Python
+          </div>
+          <span class="skill-percent">75%</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" data-width="75%" style="background:linear-gradient(90deg,#3776ab,#ffd43b);"></div>
+        </div>
+      </div>
+      <!-- React -->
+      <div class="skill-card reveal">
+        <div class="skill-header">
+          <div class="skill-name">
+            <div class="skill-icon" style="background:rgba(97,218,251,0.15);color:#61dafb;"><i
+                class="fa-brands fa-react"></i></div>
+            React
+          </div>
+          <span class="skill-percent">70%</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" data-width="70%" style="background:linear-gradient(90deg,#61dafb,#21a1f1);"></div>
+        </div>
+      </div>
+      <!-- Java -->
+      <div class="skill-card reveal">
+        <div class="skill-header">
+          <div class="skill-name">
+            <div class="skill-icon" style="background:rgba(237,134,36,0.15);color:#ed8624;"><i
+                class="fa-brands fa-java"></i></div>
+            Java
+          </div>
+          <span class="skill-percent">72%</span>
+        </div>
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" data-width="72%" style="background:linear-gradient(90deg,#ed8624,#5382a1);"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <p class="section-tag">My Recent Work</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#7c5cfc,#00d4ff);">
+          <span class="project-thumb-icon">🌐</span>
+          <div class="project-overlay">
+            <a href="#" class="project-overlay-btn" title="View Project"><i class="fa-solid fa-eye"></i></a>
+            <a href="#" class="project-overlay-btn" title="Source Code"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JS</span>
+          </div>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">A personal portfolio with modern animations, dark theme, and responsive design
+            showcasing skills and projects.</p>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#ff6b9d,#ffa76b);">
+          <span class="project-thumb-icon">🛒</span>
+          <div class="project-overlay">
+            <a href="#" class="project-overlay-btn" title="View Project"><i class="fa-solid fa-eye"></i></a>
+            <a href="#" class="project-overlay-btn" title="Source Code"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Node.js</span>
+          </div>
+          <h3 class="project-title">E-Commerce Platform</h3>
+          <p class="project-desc">A full-stack online shopping platform with user authentication, cart management, and
+            payment integration.</p>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <!-- <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#00e676,#00b0ff);">
+          <span class="project-thumb-icon">📱</span>
+          <div class="project-overlay">
+            <a href="#" class="project-overlay-btn" title="View Project"><i class="fa-solid fa-eye"></i></a>
+            <a href="#" class="project-overlay-btn" title="Source Code"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Flask</span>
+          </div>
+          <h3 class="project-title">Weather Dashboard</h3>
+          <p class="project-desc">A real-time weather dashboard with city search, 5-day forecast, and interactive charts
+            using OpenWeather API.</p>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- Certificates -->
+  <!-- <section id="certificates">
+    <div class="section-header reveal">
+      <p class="section-tag">My Achievements</p>
+      <h2 class="section-title">Certificates</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <div class="cert-shine"></div>
+        <div class="cert-content">
+          <div class="cert-icon">🏆</div>
+          <h3 class="cert-title">Web Development Bootcamp</h3>
+          <p class="cert-issuer">Udemy</p>
+          <p class="cert-date">Issued — 2025</p>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-shine"></div>
+        <div class="cert-content">
+          <div class="cert-icon">🎓</div>
+          <h3 class="cert-title">Python for Everybody</h3>
+          <p class="cert-issuer">Coursera — University of Michigan</p>
+          <p class="cert-date">Issued — 2025</p>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-shine"></div>
+        <div class="cert-content">
+          <div class="cert-icon">⚡</div>
+          <h3 class="cert-title">JavaScript Algorithms</h3>
+          <p class="cert-issuer">freeCodeCamp</p>
+          <p class="cert-date">Issued — 2024</p>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-shine"></div>
+        <div class="cert-content">
+          <div class="cert-icon">🎖️</div>
+          <h3 class="cert-title">Responsive Web Design</h3>
+          <p class="cert-issuer">freeCodeCamp</p>
+          <p class="cert-date">Issued — 2024</p>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-shine"></div>
+        <div class="cert-content">
+          <div class="cert-icon">🏅</div>
+          <h3 class="cert-title">React — The Complete Guide</h3>
+          <p class="cert-issuer">Udemy</p>
+          <p class="cert-date">Issued — 2025</p>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-shine"></div>
+        <div class="cert-content">
+          <div class="cert-icon">📜</div>
+          <h3 class="cert-title">Java Programming Masterclass</h3>
+          <p class="cert-issuer">Udemy</p>
+          <p class="cert-date">Issued — 2025</p>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <p class="section-tag">Let's Connect</p>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info reveal">
+        <h3>Let's work together!</h3>
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value">arockiajoshva@email.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-value">Tamil Nadu, India</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <div class="contact-item-label">College</div>
+            <div class="contact-item-value">Dhanalakshmi Srinivasan Engineering College</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <form id="contact-form" onsubmit="event.preventDefault(); alert('Message sent! Thank you.');">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-socials">
+      <a href="https://github.com/Joshvadev" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/arockia-joshva-a-aligosoft/" title="LinkedIn"><i
+          class="fa-brands fa-linkedin-in"></i></a>
+      <!-- <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a> -->
+    </div>
+    <p>&copy; 2026 Arockia Joshva. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
